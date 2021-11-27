@@ -1,0 +1,16 @@
+.container {
+    margin: 0 20px;
+    height: 100%;
+
+    &--showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card {
+            @include breakpoint-up("sm") {
+                max-width: 300px;
+            }
+        }
+    }
+}
